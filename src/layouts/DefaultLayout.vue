@@ -31,18 +31,23 @@
       <slot></slot>
     </main>
     <footer-partial></footer-partial>
+    <modal :show="true">
+      <h1>Modal Title</h1>
+    </modal>
   </div>
 </template>
 
 <script>
 import HeaderPartial from '@/partials/HeaderPartial.vue';
 import FooterPartial from '@/partials/FooterPartial.vue';
+import Modal from '@/components/Modal.vue';
 
 export default {
   name: 'DefaultLayout',
   components: {
     HeaderPartial,
     FooterPartial,
+    Modal
   },
 };
 </script>
